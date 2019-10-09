@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import Portal from "./portal.js.js";
+import Portal from "./portal";
 
 const mapStateToProps = (state, ownProps) => ({});
 

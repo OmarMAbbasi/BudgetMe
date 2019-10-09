@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import BudgetMe from "./budgetme";
+import BudgetMe from "./components/budgetme";
 
 function App() {
 	return (
