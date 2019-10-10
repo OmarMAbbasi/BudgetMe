@@ -8,20 +8,12 @@ export default class Register extends Component {
 			email: "",
 			password: ""
 		};
+		this.handleSubmit = this.handleSubmit.bind(this);
 	}
 
 	handleSubmit(e) {
 		e.preventDefault();
-		const user = Object.assign({}, this.state);
-		if (!this.currentUser) {
-			this.props
-				.register(user)
-				.then(() => this.props.history.push("/register/profile"));
-			return <Route to="/register/profile" />;
-		} else {
-			this.setState({ errors: "Not Logged In" });
-		}
-	}
+		this.props.history.push("/register/profile");	}
 
 	update(field) {
 		return e =>
@@ -33,7 +25,7 @@ export default class Register extends Component {
 		return (
 			<div>
 				Register Form
-				<form onSubmit="">
+				<form className="form-holder" onSubmit={this.handleSubmit}>
 					<input
 						type="email"
 						value={this.state.email}
@@ -44,8 +36,13 @@ export default class Register extends Component {
 						value={this.state.password}
 						onChange={this.update("password")}
 					></input>
+					<input
+						type="submit"
+						value="Register"
+						className="submit-buttons"
+					></input>
 				</form>
-				<NavLink to="/login">Login</NavLink>
+				<NavLink to="/login">Go To Login</NavLink>
 			</div>
 		);
 	}

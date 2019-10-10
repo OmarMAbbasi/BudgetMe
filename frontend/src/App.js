@@ -7,7 +7,7 @@ import BudgetMe from "./components/budgetme";
 
 function App() {
 	return (
-		<div className="App">
+		<div style={{ width: "100vw" }} className="App">
 			<BudgetMe />
 		</div>
 	);

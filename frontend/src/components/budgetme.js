@@ -8,7 +8,7 @@ export default class BudgetMe extends Component {
 		return (
 			<div>
 				<Switch>
-					<Portal exact path="/home" />
+					<Portal exact path="/portal" />
 					<Auth path="/" />
 				</Switch>
 			</div>

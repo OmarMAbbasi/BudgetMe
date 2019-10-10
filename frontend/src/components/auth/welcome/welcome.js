@@ -5,7 +5,7 @@ export default class Welcome extends Component {
 	render() {
 		return (
 			<div>
-				<div style={{ width: "100%" }}>
+				<div style={{ width: "100vw" }}>
 					<div style={{ height: "33%" }}>Slideshow Here</div>
 					<div
 						style={{

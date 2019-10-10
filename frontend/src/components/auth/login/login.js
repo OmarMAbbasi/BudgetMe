@@ -8,22 +8,12 @@ export default class Login extends Component {
 			email: "",
 			password: ""
 		};
+		this.handleSubmit = this.handleSubmit.bind(this);
 	}
 
 	handleSubmit(e) {
 		e.preventDefault();
-		const user = Object.assign({}, this.state);
-		if (!this.currentUser && this.currentUser.profileComplete) {
-			this.props.login(user).then(() => this.props.history.push("/portal/"));
-			return <Route to="/portal/" />;
-		} else if (!this.currentUser && !this.currentUser.profileComplete) {
-			this.props
-				.login(user)
-				.then(() => this.props.history.push("/register/profile"));
-			return <Route to="/register/profile" />;
-		} else {
-			this.setState({ errors: "Not Logged In" });
-		}
+		this.props.history.push("/portal");
 	}
 
 	update(field) {
@@ -36,7 +26,7 @@ export default class Login extends Component {
 		return (
 			<div>
 				Login Form
-				<form onSubmit="">
+				<form className="form-holder" onSubmit={this.handleSubmit}>
 					<input
 						type="email"
 						value={this.state.email}
@@ -47,6 +37,7 @@ export default class Login extends Component {
 						value={this.state.password}
 						onChange={this.update("password")}
 					></input>
+					<input type="submit" value="Login" className="submit-buttons"></input>
 				</form>
 				<NavLink to="/register">Register</NavLink>
 			</div>
