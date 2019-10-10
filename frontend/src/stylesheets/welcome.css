@@ -1,0 +1,11 @@
+.welcome-buttons {
+	height: 3em;
+	width: 70%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3em;
+	margin: 30px;
+	color: white;
+	background-color: blue;
+}

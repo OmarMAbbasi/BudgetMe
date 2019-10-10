@@ -5,9 +5,25 @@ export default class Welcome extends Component {
 	render() {
 		return (
 			<div>
-				<div>Slideshow Here</div>
-				<NavLink to="/login">Login</NavLink>
-				<NavLink to="/register">Register</NavLink>
+				<div style={{ width: "100%" }}>
+					<div style={{ height: "33%" }}>Slideshow Here</div>
+					<div
+						style={{
+							display: "flex",
+							height: "66%",
+							flexDirection: "column",
+							justifyContent: "space-between",
+							alignItems: "center"
+						}}
+					>
+						<NavLink className="welcome-buttons" to="/login">
+							Login
+						</NavLink>
+						<NavLink className="welcome-buttons" to="/register">
+							Register
+						</NavLink>
+					</div>
+				</div>
 			</div>
 		);
 	}
