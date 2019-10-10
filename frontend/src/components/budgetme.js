@@ -6,12 +6,10 @@ import Auth from "./auth/auth_container";
 export default class BudgetMe extends Component {
 	render() {
 		return (
-			<div>
-				<Switch>
-					<Portal exact path="/portal" />
-					<Auth path="/" />
-				</Switch>
-			</div>
+			<Switch>
+				<Portal exact path="/portal" />
+				<Auth path="/" />
+			</Switch>
 		);
 	}
 }

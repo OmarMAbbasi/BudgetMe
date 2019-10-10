@@ -5,14 +5,17 @@ export default class Welcome extends Component {
 	render() {
 		return (
 			<div>
-				<div style={{ width: "100vw" }}>
-					<div style={{ height: "33%" }}>Slideshow Here</div>
+				<div className="welcome-box">
+					<div className="welcome-header">
+						<div className="splash-welcome">Welcome to</div>
+						<div className="splash-budget">BudgetMe</div>
+					</div>
 					<div
 						style={{
 							display: "flex",
-							height: "66%",
+							height: "20vh",
 							flexDirection: "column",
-							justifyContent: "space-between",
+							justifyContent: "space-around",
 							alignItems: "center"
 						}}
 					>

@@ -6,11 +6,7 @@ import "./stylesheets/css-reset.css";
 import BudgetMe from "./components/budgetme";
 
 function App() {
-	return (
-		<div style={{ width: "100vw" }} className="App">
-			<BudgetMe />
-		</div>
-	);
+	return <BudgetMe />;
 }
 
 export default App;

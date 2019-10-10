@@ -24,21 +24,35 @@ export default class Login extends Component {
 	}
 	render() {
 		return (
-			<div>
-				Login Form
+			<div className="welcome-box">
+				<div className="welcome-header">
+					<div className="splash-welcome">Welcome to</div>
+					<div className="splash-budget">BudgetMe</div>
+				</div>
 				<form className="form-holder" onSubmit={this.handleSubmit}>
+					<div className="form-fields">
+						<input
+							className="auth-field"
+							type="email"
+							value={this.state.email}
+							onChange={this.update("email")}
+						></input>
+						<input
+							className="auth-field"
+							type="password"
+							value={this.state.password}
+							onChange={this.update("password")}
+						></input>
+					</div>
 					<input
-						type="email"
-						value={this.state.email}
-						onChange={this.update("email")}
+						type="submit"
+						value="Login"
+						className="welcome-buttons"
 					></input>
-					<input
-						type="password"
-						value={this.state.password}
-						onChange={this.update("password")}
-					></input>
-					<input type="submit" value="Login" className="submit-buttons"></input>
 				</form>
+				{/* <NavLink className="welcome-buttons" to="/login">
+						Login
+					</NavLink> */}
 				<NavLink to="/register">Register</NavLink>
 			</div>
 		);
