@@ -35,7 +35,7 @@ export default class Login extends Component {
 							className="auth-field"
 							type="email"
 							value={this.state.email}
-							placeholder="Username"
+							placeholder="Email"
 							onChange={this.update("email")}
 						></input>
 						<input

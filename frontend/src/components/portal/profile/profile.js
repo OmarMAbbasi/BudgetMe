@@ -4,6 +4,7 @@ import SettingsContainer from "./settings/settings_container";
 import NavButton from "../../../styles/assets/Images/nav_icons/NavigatorButton.png";
 import Home from "./home";
 import LoanFlow from "./loans/loan_flow";
+import NavMenu from "./nav_menu";
 export default class Profile extends Component {
 	render() {
 		return (
@@ -13,20 +14,11 @@ export default class Profile extends Component {
 					<Route path="/profile/loans" component={LoanFlow} />
 					<Route path="/profile" component={Home} />>
 				</Switch>
+				<div className="dummy-padding"> " " </div>
 				<div className="nav-button-wrapper">
 					<Switch>
 						<Route exact path="/profile/settings" />
-						<Route
-							path="/profile"
-							component={() => {
-								return (
-									<img
-										style={{ height: "20vw", width: "20vw" }}
-										src={NavButton}
-									></img>
-								);
-							}}
-						/>
+						<Route path="/profile" component={NavMenu} />
 					</Switch>
 				</div>
 			</div>
