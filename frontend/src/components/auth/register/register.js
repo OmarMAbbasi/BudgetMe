@@ -13,7 +13,8 @@ export default class Register extends Component {
 
 	handleSubmit(e) {
 		e.preventDefault();
-		this.props.history.push("/register/profile");	}
+		this.props.history.push("/profile/settings");
+	}
 
 	update(field) {
 		return e =>
@@ -21,28 +22,44 @@ export default class Register extends Component {
 				[field]: e.currentTarget.value
 			});
 	}
+
 	render() {
 		return (
-			<div>
-				Register Form
+			<div className="welcome-box">
+				<div className="welcome-header">
+					<div className="splash-welcome">Welcome to</div>
+					<div className="splash-budget">BudgetMe</div>
+				</div>
 				<form className="form-holder" onSubmit={this.handleSubmit}>
-					<input
-						type="email"
-						value={this.state.email}
-						onChange={this.update("email")}
-					></input>
-					<input
-						type="password"
-						value={this.state.password}
-						onChange={this.update("password")}
-					></input>
+					<div className="form-fields">
+						<input
+							className="auth-field"
+							type="email"
+							value={this.state.email}
+							placeholder="Username"
+							onChange={this.update("email")}
+						></input>
+						<input
+							className="auth-field"
+							type="password"
+							value={this.state.password}
+							placeholder="Password"
+							onChange={this.update("password")}
+						></input>
+					</div>
 					<input
 						type="submit"
 						value="Register"
-						className="submit-buttons"
+						className="welcome-buttons"
 					></input>
 				</form>
-				<NavLink to="/login">Go To Login</NavLink>
+				<div className="oauth-splash" />
+				<div className="registration-pitch">
+					<span className="pitch-question">Already have an account? </span>
+					<NavLink to="/login" className="pitch-answer">
+						Login
+					</NavLink>
+				</div>
 			</div>
 		);
 	}

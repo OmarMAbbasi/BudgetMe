@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import { Switch } from "react-router-dom";
-import Portal from "./portal/portal_container";
+import Profile from "./portal/profile/profile_container";
 import Auth from "./auth/auth_container";
 
 export default class BudgetMe extends Component {
 	render() {
 		return (
 			<Switch>
-				<Portal exact path="/portal" />
+				<Profile path="/profile" />
 				<Auth path="/" />
 			</Switch>
 		);

@@ -1,11 +1,11 @@
-import { connect } from "react-redux";
-import Portal from "./portal";
+// import { connect } from "react-redux";
+// import Portal from "./portal";
 
-const mapStateToProps = (state, ownProps) => ({});
+// const mapStateToProps = (state, ownProps) => ({});
 
-const mapDispatchToProps = {};
+// const mapDispatchToProps = {};
 
-export default connect(
-	mapStateToProps,
-	mapDispatchToProps
-)(Portal);
+// export default connect(
+// 	mapStateToProps,
+// 	mapDispatchToProps
+// )(Portal);

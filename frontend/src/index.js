@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./stylesheets/css-reset.css";
-import "./stylesheets/welcome.css";
+import "./styles/css-reset.css";
+import "./styles/welcome.css";
 import * as serviceWorker from "./serviceWorker";
 
 import configureStore from "./store/store";

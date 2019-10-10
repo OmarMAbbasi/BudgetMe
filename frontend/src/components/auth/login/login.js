@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Route, NavLink } from "react-router-dom";
-
+import oAuth from "../../../styles/assets/Images/OauthImages.png";
 export default class Login extends Component {
 	constructor(props) {
 		super(props);
@@ -13,7 +13,7 @@ export default class Login extends Component {
 
 	handleSubmit(e) {
 		e.preventDefault();
-		this.props.history.push("/portal");
+		this.props.history.push("/profile");
 	}
 
 	update(field) {
@@ -35,12 +35,14 @@ export default class Login extends Component {
 							className="auth-field"
 							type="email"
 							value={this.state.email}
+							placeholder="Username"
 							onChange={this.update("email")}
 						></input>
 						<input
 							className="auth-field"
 							type="password"
 							value={this.state.password}
+							placeholder="Password"
 							onChange={this.update("password")}
 						></input>
 					</div>
@@ -50,10 +52,13 @@ export default class Login extends Component {
 						className="welcome-buttons"
 					></input>
 				</form>
-				{/* <NavLink className="welcome-buttons" to="/login">
-						Login
-					</NavLink> */}
-				<NavLink to="/register">Register</NavLink>
+				<div className="oauth-splash" />
+				<div className="registration-pitch">
+					<span className="pitch-question">Don't have an account? </span>
+					<NavLink to="/register" className="pitch-answer">
+						Signup
+					</NavLink>
+				</div>
 			</div>
 		);
 	}

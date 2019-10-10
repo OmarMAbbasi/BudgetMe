@@ -15,9 +15,33 @@
 	margin-top: 9vh;
 }
 
+.oauth-splash {
+	height: 10vh;
+	padding-left: 25vw;
+	padding-right: 25vw;
+	background-repeat: no-repeat;
+	background-size: 50vw 10vh;
+	background-image: url(./assets/Images/OauthImages.png);
+	margin-top: 8vh;
+	margin-top: 5vh;
+}
+
 .root {
 	height: 100vh;
 	width: 100%;
+}
+
+.registration-pitch {
+}
+
+.pitch-question {
+	color: #70707066;
+	font-size: 3vh;
+}
+
+.pitch-answer {
+	color: #707070;
+	font-size: 3vh;
 }
 
 .splash-welcome {
@@ -46,7 +70,7 @@
 	align-items: center;
 	justify-content: flex-start;
 	background: #ffffff 0% 0% no-repeat padding-box;
-	border: 0.07rem solid #70707063;
+	border: 0.07vh solid #70707063;
 	border-radius: 0.07rem;
 	opacity: 1;
 	height: 13vh;
@@ -54,8 +78,11 @@
 }
 
 .auth-field {
+	font-size: 3vh;
+	text-align: center;
 	height: 50%;
 	width: 100%;
+	border-bottom: 0;
 }
 
 .welcome-header {
@@ -73,7 +100,6 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 24vh;
 	width: 66vw;
 }
 
