@@ -50,3 +50,29 @@
 	border-radius: 300px;
 	margin-top: 5.5vh;
 }
+
+.micro-request-form-wrapper {
+	height: 100%;
+	width: 100%;
+	background: #ffffff;
+}
+
+.role-switch {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 7vh;
+	margin-bottom: 8vh;
+	margin-right: 10vw;
+	margin-left: 10vw;
+}
+
+.micro-switch-active {
+	font-size: 3vh;
+	color: #707070;
+}
+.micro-switch-inactive {
+	font-size: 3vh;
+	color: #707070;
+	opacity: 0.4;
+}

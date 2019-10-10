@@ -21,7 +21,7 @@ export default class LoanOptions extends Component {
 		return (
 			<ul>
 				<li className="loan-network">
-					<span className="micro-blurb">Micro Loan from your circle</span>
+					<span className="micro-blurb">Micro Loans in your Circle</span>
 					<div onClick={this.handleMicro} className="micro-icon">
 						<img src={MicroIcon} />
 					</div>
