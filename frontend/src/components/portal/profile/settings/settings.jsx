@@ -3,6 +3,7 @@ import { Switch, Route, NavLink } from "react-router-dom";
 
 import Budget from "./budget";
 import Info from "./info";
+import EULAAgreement from "../eula";
 
 export default class Settings extends Component {
 	constructor(props) {
@@ -22,7 +23,7 @@ export default class Settings extends Component {
 
 	toEULA = () => {
 		this.setState({
-			currentView: <span>toEULA</span>,
+			currentView: <EULAAgreement />,
 			nextButton: this.finishRegistration
 		});
 	};
