@@ -25,9 +25,6 @@ export default class Home extends Component {
 						<img className="slider-image" src={SliderFour}></img>
 					</li>
 				</ul>
-				<div className="nav-button-wrapper">
-					<img style={{ height: "20vw", width: "20vw;" }} src={NavButton}></img>
-				</div>
 			</div>
 		);
 	}
