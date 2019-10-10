@@ -14,7 +14,9 @@
 	align-items: center;
 	width: 100%;
 	z-index: 2;
-	background-color: #3b86ff;
+	background-color: transparent;
+	position: absolute;
+	bottom: 0px;
 }
 
 .home-wrapper {
@@ -22,7 +24,6 @@
 	flex-direction: column;
 	align-items: center;
 	overflow-y: scroll;
-	height: 90vh;
 }
 
 .pie-chart {

@@ -132,4 +132,5 @@ table {
 .main-app {
 	background-color: #3b86ff;
 	height: 100vh;
+	overflow-y: scroll;
 }
