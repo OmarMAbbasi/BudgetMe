@@ -9,7 +9,6 @@
 .setup-flow {
 	display: flex;
 	flex-direction: column;
-	/* overflow-y: scroll; */
 }
 
 .info-field-wrapper {

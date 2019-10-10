@@ -5,6 +5,7 @@ import App from "./App";
 import "./styles/profile.css";
 import "./styles/welcome.css";
 import "./styles/setup.css";
+import "./styles/loans.css";
 import "./styles/css-reset.css";
 
 const Root = ({ store }) => (
