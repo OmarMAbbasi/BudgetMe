@@ -9,6 +9,7 @@
 .setup-flow {
 	display: flex;
 	flex-direction: column;
+	overflow-y: scroll;
 }
 
 .info-field-wrapper {
@@ -37,4 +38,25 @@
 .next-button-wrapper {
 	display: flex;
 	justify-content: center;
+	background-color: #3b86ff;
+}
+
+.slider-image {
+	height: 19vh;
+	width: 50vh;
+}
+
+.budget-sliders {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	padding-top: 5.5vh;
+}
+
+.budget-prompt {
+	color: #ffffff;
+	font-size: 3vh;
+	text-align: center;
+	padding-bottom: 5.5vh;
 }
