@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import { Switch, Route, NavLink } from "react-router-dom";
-
 import Budget from "./budget";
 import Info from "./info";
 import EULAAgreement from "../eula";
-
+import nextButton from "../../../../styles/assets/Images/nav_icons/NextButton.png";
 export default class Settings extends Component {
 	constructor(props) {
 		super(props);
@@ -34,9 +33,14 @@ export default class Settings extends Component {
 
 	render() {
 		return (
-			<div>
+			<div className="setup-flow">
 				{this.state.currentView}
-				<button onClick={this.state.nextButton}>Next Button</button>
+				<div className="next-button-wrapper" onClick={this.state.nextButton}>
+					<img
+						style={{ height: "20vw", width: "20vw;" }}
+						src={nextButton}
+					></img>
+				</div>
 			</div>
 		);
 	}

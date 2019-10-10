@@ -5,7 +5,7 @@ import SettingsContainer from "./settings/settings_container";
 export default class Profile extends Component {
 	render() {
 		return (
-			<div>
+			<div className="main-app">
 				Profile
 				<Switch>
 					<Route path="/profile/settings" component={SettingsContainer} />
