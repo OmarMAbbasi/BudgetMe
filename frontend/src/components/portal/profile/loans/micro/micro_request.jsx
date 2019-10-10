@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 
+import DebtorForm from "./debtor_form";
+
+const LenderComponent = <div>Lender Component</div>;
+
 export default class MicroRequest extends Component {
 	constructor(props) {
 		super(props);
@@ -32,9 +36,11 @@ export default class MicroRequest extends Component {
 	render() {
 		let debtorClass = "micro-switch-active";
 		let lenderClass = "micro-switch-inactive";
+		let displayComponent = <DebtorForm />;
 		if (this.state.lenderClass) {
 			lenderClass = "micro-switch-active";
 			debtorClass = "micro-switch-inactive";
+			displayComponent = LenderComponent;
 		}
 		return (
 			<div className="micro-request-form-wrapper">
@@ -46,6 +52,7 @@ export default class MicroRequest extends Component {
 						Fund A Loan
 					</span>
 				</div>
+				{displayComponent}
 			</div>
 		);
 	}

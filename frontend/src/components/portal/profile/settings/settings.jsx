@@ -28,6 +28,7 @@ export default class Settings extends Component {
 	};
 
 	finishRegistration = () => {
+		
 		this.props.history.push("/profile");
 	};
 
